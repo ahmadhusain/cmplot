@@ -32,3 +32,4 @@ head(data_pkg)
 confmat_plot(data_pkg$probability, data_pkg$churn_status, "Yes", "No")
 ```
 
+![]('data-raw/index.html')
