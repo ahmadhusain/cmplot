@@ -11,11 +11,12 @@
 #'   "churn_status" = as.factor(c("No","Yes", "No", "No", "Yes"))
 #' )
 #'
-#' dat %>% confat_plot(probability, churn_status, "Yes", "No")
+#' dat %>% confmat_plot(probability, churn_status, "Yes", "No")
 #' @importFrom caret confusionMatrix
 #' @import dplyr
 #' @import ggplot2
 #' @import plotly
+#' @import tidyr
 #' @export
 confmat_plot <- function(prob, ref, postarget, negtarget)
 {
