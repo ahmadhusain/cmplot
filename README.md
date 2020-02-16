@@ -1,18 +1,3 @@
----
-output: github_document
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  warning = FALSE,
-  message = FALSE,
-  fig.align = "center",
-  out.width = "100%",
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
 # Overview
 
 `cmplot` is a developed packages for create confusion matrix graph for Optimizing Probability Thresholds.
@@ -21,14 +6,14 @@ knitr::opts_chunk$set(
 
 You can install the development version of `cmplot` using:
 
-```{r, eval=FALSE}
+```
 # install.packages("remotes")
 remotes::install_github("ahmadhusain/cmplot")
 ```
 
 # Examples
 
-```{r}
+```
 library(dplyr)
 library(caret)
 library(tidyr)
@@ -38,12 +23,12 @@ library(plotly)
 load("data-raw/churn_prediction.RData")
 ```
 
-```{r}
+```
 head(data_pkg)
 ```
 
 
-```{r}
+```
 confmat_plot(data_pkg$probability, data_pkg$churn_status, "Yes", "No")
 ```
 
