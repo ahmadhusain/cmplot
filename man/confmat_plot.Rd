@@ -27,5 +27,5 @@ dat <- tibble(
   "churn_status" = as.factor(c("No","Yes", "No", "No", "Yes"))
 )
 
-dat \%>\% confat_plot(probability, churn_status, "Yes", "No")
+dat \%>\% confmat_plot(probability, churn_status, "Yes", "No")
 }
